@@ -1,0 +1,14 @@
+type Campaign {
+  numberID: Int
+  name: String
+  description: String
+  thumbnail: String
+  numNFTMinted: Int
+  startTime: Int
+  endTime: Int
+  formula: String
+}
+
+type Query {
+  campaign(id: ID!): Campaign
+}
